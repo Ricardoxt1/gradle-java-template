@@ -1,0 +1,28 @@
+### Listar todos os livros
+GET http://localhost:8080/livros
+
+### Buscar livro por ID
+GET http://localhost:8080/livros/3
+
+### Adicionar um livro
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "titulo": "Dom Casmurro",
+  "generos": "Romance",
+  "autores": "Machado de Assis"
+}
+
+### Atualizar um livro
+PUT http://localhost:8080/livros/2
+Content-Type: application/json
+
+{
+  "titulo": "Sobre Meninos e Lobos",
+  "generos": "Mistério, Ficção",
+  "autores": "Dennis Lehane"
+}
+
+### Remover um livro
+DELETE http://localhost:8080/livros/2
